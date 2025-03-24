@@ -1,0 +1,239 @@
+@import "normalize.css";
+
+:root {
+    --rose-dark: #7A284E;
+    --rose-light: #FFF7FB;
+
+    --stone-dark: #312E2C;
+    --stone-middle: #5F564D;
+    --stone-light: #E3DDD7;
+
+    --bg-color: #F3E5D7;
+    --brown: #854632;
+    --white: #FFFFFF;
+
+    --font-main: 'Outfit', sans-serif;
+    --font-heading: "Young Serif", sans-serif;
+
+    --border-radius: 12px;
+
+    --font-size-main: 16px;
+    --font-size-h2: 28px;
+    --line-height-main: 100%;
+    --line-height-150: 150%;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-main);
+    font-size: var(--font-size-main);
+    font-weight: 400;
+    color: var(--stone-middle);
+    width: 100%;
+    padding-block: 128px;
+}
+
+.wrapper {
+    max-width: 736px;
+    width: 100%;
+    padding: 40px;
+    margin-inline: auto;
+    background-color: var(--white);
+    border-radius: 24px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    margin-bottom: 40px;
+}
+
+.title {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: var(--line-height-main);
+    color: var(--stone-dark);
+}
+
+.summary {
+    margin: 24px 0 32px;
+    line-height: var(--line-height-150);
+}
+
+.preparation-wrapper {
+    background-color: var(--rose-light);
+    padding: 24px;
+    border-radius: var(--border-radius);
+    margin-bottom: 32px;
+}
+
+.preparation-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--rose-dark);
+    line-height: var(--line-height-main);
+    margin-bottom: 16px;
+}
+
+.preparation-list,
+.ingredients-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.preparation-list li,
+.ingredients-list li {
+    line-height: var(--line-height-150);
+    position: relative;
+    padding-left: 40px;
+}
+
+.preparation-list li::before,
+.ingredients-list li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background-color: var(--rose-dark);
+    border-radius: 50%;
+    margin: 0 8px;
+}
+
+.prep-bold {
+    font-weight: bold;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--brown);
+    margin-bottom: 24px;
+}
+
+.breaker {
+    width: 100%;
+    height: 0.5px;
+    background-color: var(--stone-light);
+    margin-block: 32px;
+}
+
+.instruction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 24px;
+}
+
+.instruction-list li {
+    padding-left: 16px;
+}
+
+.instruction-list li::marker {
+    font-family: var(--font-main), sans-serif;
+    font-weight: bold;
+    color: var(--brown);
+}
+
+.inst-bold {
+    font-weight: bold;
+}
+
+.nutrition-table-summary {
+    margin-bottom: 24px;
+}
+
+.nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-bottom: 42px;
+}
+
+.nutrition th,
+.nutrition td {
+    width: 50%;
+    padding-block: 12px;
+    border-bottom: 1px solid var(--stone-light);
+    line-height: var(--line-height-150);
+}
+
+.nutrition th {
+    font-weight: 400;
+    padding-left: 32px;
+}
+
+.nutrition td {
+    font-weight: bold;
+    color: var(--brown);
+    padding-left: 12px;
+}
+
+.nutrition tr:first-child th,
+.nutrition tr:first-child td {
+    padding-top: 0;
+}
+
+.nutrition tr:last-child th,
+.nutrition tr:last-child td {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.wrapper-attribution {
+    font-size: 14px;
+    color: var(--brown);
+    text-align: center;
+}
+
+.wrapper-attribution a {
+    color: var(--rose-dark);
+}
+
+.wrapper-attribution a:hover {
+    color: var(--stone-dark);
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        max-width: 616px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 376px) {
+    body {
+        padding: 0;
+    }
+    .wrapper {
+        border-radius: 0;
+        padding: 0;
+    }
+    .wrapper img {
+        border-radius: 0;
+    }
+    .title {
+        font-size: 36px;
+    }
+    .content-inner {
+        padding-inline: 32px;
+    }
+    .attribution {
+        padding-bottom: 20px;
+        width: 70%;
+        margin: auto;
+    }
+    .nutrition-table-summary {
+        padding-right: 5px;
+    }
+}
