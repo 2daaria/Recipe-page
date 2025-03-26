@@ -69,14 +69,6 @@ img {
     margin-bottom: 32px;
 }
 
-.preparation-heading {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--rose-dark);
-    line-height: var(--line-height-main);
-    margin-bottom: 16px;
-}
-
 .preparation-list,
 .ingredients-list {
     display: flex;
@@ -119,6 +111,15 @@ h2 {
     line-height: 100%;
     color: var(--brown);
     margin-bottom: 24px;
+}
+
+.preparation-heading {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--rose-dark);
+    line-height: var(--line-height-main);
+    margin-bottom: 16px;
 }
 
 .breaker {
