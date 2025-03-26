@@ -10,7 +10,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ## Links
 
 - Solution URL: [GitHub](https://github.com/2daaria/Recipe-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live](https://2daaria.github.io/Recipe-page/)
 
 
 ## Built with
